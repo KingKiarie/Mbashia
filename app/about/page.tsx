@@ -21,8 +21,8 @@ export default function About() {
 
   return (
     <section className="w-full h-auto py-16">
-      <div className="max-w-[60%] mx-auto">
-        <div className="w-full flex flex-row">
+      <div className="max-w-[90%] md:max-w-[70%] lg:max-w-[60%] mx-auto">
+        <div className="w-full flex flex-col-reverse lg:flex-row ">
           <div className="w-full flex flex-col">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -55,11 +55,16 @@ export default function About() {
             </motion.div>
           </div>
           <motion.div
-           initial={{ y: 50, opacity: 0 }}
-           whileInView={{ y: 0, opacity: 1 }}
-           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
-          className="w-full">
-            <img src="/background/mbashia-removebg-preview.png" alt="Img" />
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+            className="w-full mb-10 flex items-center justify-center"
+          >
+            <img
+              src="/background/mbashia-removebg-preview.png"
+              alt="Img"
+              className="rounded-b-xl"
+            />
           </motion.div>
         </div>
 

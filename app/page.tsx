@@ -13,7 +13,9 @@ export default function Home() {
       <SkillsetSection />
       <BlogSection />
       <TestimonialsComponent />
-      <ContactSection />
+      <div id="contact">
+        <ContactSection />
+      </div>
     </section>
   );
 }

@@ -1,23 +1,24 @@
 "use client";
+
 import { motion } from "framer-motion";
 import ProjectCard from "../components/Projects/ProjectListingTile";
 import { projectData } from "../shared/data";
 
 export default function Projects() {
   return (
-    <section className="w-full h-auto max-w-[70%] mx-auto mt-20 px-4">
+    <section className="w-full h-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto mt-20 px-4">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="mb-10"
+        className="mb-10 text-start"
       >
-        <h1 className="text-4xl font-black text-gray-800 dark:text-gray-200 mb-6">
+        <h1 className="text-3xl md:text-4xl font-black text-gray-800 dark:text-gray-200 mb-4">
           Projects.
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-          Here’s a curated collection of projects covering different web
-          development technologies and concepts.
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-400">
+          Explore a curated selection of web development projects showcasing
+          various technologies and concepts.
         </p>
       </motion.div>
 
@@ -25,16 +26,15 @@ export default function Projects() {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
       >
-        {/* mapped and mounted the day with dynamic routes prerendered */}
-        {projectData.map((project, index) => (
+        {projectData.map((project) => (
           <ProjectCard
-            key={index}
+            key={project.id}
             id={project.id}
             imageRef={project.imageRef}
             title={project.title}
-            description={project.description}
+            shortDescription={project.shortDescription}
             liveDemo={project.liveDemo}
             framework={project.framework}
           />
