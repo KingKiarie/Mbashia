@@ -18,23 +18,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-      <body
-        className={`font-bebas antialiased min-h-screen bg-cover bg-fixed`}
-        style={{
-          // backgroundImage: `url("/background/bg.png")`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          opacity: "10",
-        }}
-      >
-        {/* <CustomCursor /> */}
-        <Navbar />
-        <main className="w-full min-h-screen flex flex-col items-center justify-center">
-          {children}
-        </main>
-        <Footer />
-      </body>
+        <body
+          className={`font-bebas antialiased min-h-screen bg-cover bg-fixed`}
+          style={{
+            // backgroundImage: `url("/background/bg.png")`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: "10",
+          }}
+        >
+          {/* <CustomCursor /> */}
+          <Navbar />
+          <main className="w-full min-h-screen flex flex-col items-center justify-center">
+            {children}
+          </main>
+          <Footer />
+        </body>
       </ThemeProvider>
     </html>
   );

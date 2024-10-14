@@ -67,7 +67,7 @@ export default function Contact() {
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
       >
         <form
-          className="mx-auto w-full bg-white p-8 space-y-6"
+          className="mx-auto w-full  p-8 space-y-6"
           onSubmit={handleSubmit}
         >
           <motion.div

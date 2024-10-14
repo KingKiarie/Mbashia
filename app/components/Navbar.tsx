@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useState } from "react";
-import { FaCloudSun, FaCloudMoon, FaBars, FaTimes } from "react-icons/fa6";
+import { useState } from "react";
+import { FaCloudSun, FaCloudMoon, FaBars } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
 import { useTheme } from "../Theme/ThemeProvider";
 import Link from "next/link";
 
@@ -70,7 +71,10 @@ export default function Navbar() {
               { name: "About", path: "/about" },
               { name: "Projects", path: "/projects" },
               { name: "Blog", path: "/blog" },
-              { name: "Contact", path: "#contact" },
+              {
+                name: "Contact",
+                path: { pathname: "/", query: { section: "contact" } },
+              },
             ].map((item) => (
               <li
                 key={item.name}

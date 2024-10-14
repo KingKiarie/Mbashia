@@ -146,7 +146,7 @@ const SkillSetTiles = () => {
 const SoftSkillCard = ({ icon, title, description }) => {
   return (
     <motion.div
-      className="bg-white shadow-md p-6 rounded-lg "
+      className=" shadow-md p-6 rounded-lg "
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
@@ -161,7 +161,7 @@ const SoftSkillCard = ({ icon, title, description }) => {
 const TechnicalSkillCard = ({ icon, title, description, technologies }) => {
   return (
     <motion.div
-      className="bg-gray-100 shadow-md p-6 rounded-lg b"
+      className="shadow-md p-6 rounded-lg b"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
@@ -181,7 +181,7 @@ const TechnicalSkillCard = ({ icon, title, description, technologies }) => {
 const LanguageCard = ({ icon, name }) => {
   return (
     <motion.div
-      className="bg-white shadow-md p-6 rounded-lg bo flex items-center space-x-4"
+      className=" shadow-md p-6 rounded-lg bo flex items-center space-x-4"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300 }}
     >

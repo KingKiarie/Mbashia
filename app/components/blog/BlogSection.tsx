@@ -6,7 +6,7 @@ import { blogs } from "@/app/shared/data";
 const BlogCard = ({ imageRef, title, excerpt, link }) => {
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-sm overflow-hidden transition-transform transform duration-300"
+      className=" rounded-lg shadow-md overflow-hidden transition-transform transform duration-300"
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -21,7 +21,7 @@ const BlogCard = ({ imageRef, title, excerpt, link }) => {
 
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
-        <p className="text-gray-700 mb-4">{excerpt}</p>
+        <p className="text-black mb-4">{excerpt}</p>
         <Link href={link}>
           <span className="text-gray-500 hover:text-black hover:underline">
             Read More

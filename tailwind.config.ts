@@ -7,17 +7,11 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class", 
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
         cardo: ["Cardo", "serif"],
-      },
-      colors: {
-        lightBackground: "#ffffff", 
-        darkBackground: "#1a202c", 
-        lightText: "#000000", 
-        darkText: "#f7fafc",
       },
     },
   },
