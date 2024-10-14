@@ -71,7 +71,7 @@ export default function BlogSection() {
         <div className="mt-16">
           <Link href="/blogs">
             <motion.button
-              className="px-8 py-4 text-lg font-semibold hover:bg-black hover:text-white border-black border-2 rounded-md text-black ease-in duration-300"
+              className="px-8 py-4 text-lg font-semibold underline underline-offset-4 rounded-md text-black ease-in duration-300"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}

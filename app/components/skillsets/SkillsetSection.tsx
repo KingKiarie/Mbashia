@@ -112,7 +112,7 @@ export default function SkillsetSection() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <Link href={{ pathname: "/about", query: { section: "skillset" } }}>
-            <button className="px-8 py-4 text-lg font-semibold hover:bg-black hover:text-white border-black border-2 rounded-md text-black ease-in duration-300">
+            <button className="px-8 py-4 text-lg font-semibold  underline underline-offset-4 rounded-md text-black ease-in duration-300">
               View Full Skillset
             </button>
           </Link>

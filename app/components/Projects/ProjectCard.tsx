@@ -50,7 +50,7 @@ const ProjectListing = () => {
           className="text-center mt-8 md:mt-12 w-full"
         >
           <Link href="/projects">
-            <button className="flex items-start px-8 py-4 text-lg font-semibold hover:bg-black hover:text-white border-black border-2 rounded-md text-black ease-in duration-300">
+            <button className="flex items-start px-8 py-4 text-lg font-semibold  underline underline-offset-4 rounded-md text-black ease-in duration-300">
               View more projects
             </button>
           </Link>
