@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import { ThemeProvider } from "./Theme/ThemeProvider";
+import { ThemeProvider } from "./Theme/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Mbashia Portfolio",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <ThemeProvider> */}
+      <ThemeProvider>
       <body
         className={`font-bebas antialiased min-h-screen bg-cover bg-fixed`}
         style={{
@@ -33,10 +33,9 @@ export default function RootLayout({
         <main className="w-full min-h-screen flex flex-col items-center justify-center">
           {children}
         </main>
-
         <Footer />
       </body>
-      {/* </ThemeProvider> */}
+      </ThemeProvider>
     </html>
   );
 }

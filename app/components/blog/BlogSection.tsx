@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { blogs } from "@/app/shared/data";
 
 const BlogCard = ({ imageRef, title, excerpt, link }) => {
   return (
@@ -32,39 +33,15 @@ const BlogCard = ({ imageRef, title, excerpt, link }) => {
 };
 
 export default function BlogSection() {
-  const blogs = [
-    {
-      imageRef: "#",
-      title: "Understanding React Hooks",
-      excerpt:
-        "React Hooks have revolutionized the way we write React components. Learn the basics and advanced techniques...",
-      link: "/blogs/react-hooks",
-    },
-    {
-      imageRef: "#",
-      title: "JavaScript ES6 Features",
-      excerpt:
-        "Explore the new features introduced in ES6, including arrow functions, destructuring, and more...",
-      link: "/blogs/javascript-es6",
-    },
-    {
-      imageRef: "#",
-      title: "CSS Grid Layout: A Complete Guide",
-      excerpt:
-        "CSS Grid Layout is a powerful layout system available in CSS. This guide will show you how to get started...",
-      link: "/blogs/css-grid-layout",
-    },
-  ];
-
   return (
     <motion.section
-      className="w-full py-16"
+      className="w-full py-16 max-w-[90%] lg:max-w-[60%] mx-auto "
       initial={{ y: 50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       <motion.div
-        className="w-full max-w-[60%] mx-auto text-start"
+        className="w-full text-start"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}

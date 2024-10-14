@@ -1,13 +1,53 @@
 "use client";
-// import ContactForm from "../components/ContactForm";
+
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import { toast, ToastContainer } from "react-toastify"; 
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const serviceId = "service_jge3vmr";//replace with your service id keys
+  const templateId = "template_3o594wl";//replace with your Template id keys
+  const userId = "DJvNtxWPvhGUSef77";//replace with your User id keys
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+
+      
+        toast.success("Message sent successfully!");
+
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+     
+        toast.error("Error sending message. Please try again.");
+      });
+  };
+
   return (
     <section
-      className="w-full h-auto max-w-[60%] mx-auto flex flex-col"
+      className="w-full h-auto max-w-[90%] lg:max-w-[60%] mx-auto flex flex-col"
       id="#contact"
     >
+      <ToastContainer /> 
       <motion.div
         className="mb-8"
         initial={{ y: 50, opacity: 0 }}
@@ -20,14 +60,16 @@ export default function Contact() {
           <span className="font-bold">mbashiavictor@gmail.com</span>
         </p>
       </motion.div>
-
       <motion.div
         className="w-full flex items-start"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
       >
-        <form className="mx-auto w-full bg-white p-8 space-y-6">
+        <form
+          className="mx-auto w-full bg-white p-8 space-y-6"
+          onSubmit={handleSubmit}
+        >
           <motion.div
             className="flex flex-col"
             initial={{ y: 20, opacity: 0 }}
@@ -40,8 +82,12 @@ export default function Contact() {
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
               className="p-4 border border-gray-300 rounded-md focus:outline-none focus:bg-gray-50 transition duration-300"
+              required
             />
           </motion.div>
 
@@ -57,8 +103,12 @@ export default function Contact() {
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
               className="p-4 border border-gray-300 rounded-md focus:outline-none focus:bg-gray-50 transition duration-300"
+              required
             />
           </motion.div>
 
@@ -73,9 +123,13 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={4}
               placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
               className="p-4 border border-gray-300 rounded-md focus:outline-none focus:bg-gray-50 transition duration-300"
+              required
             ></textarea>
           </motion.div>
 

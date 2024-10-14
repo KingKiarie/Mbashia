@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaCloudSun, FaCloudMoon, FaBars, FaTimes } from "react-icons/fa6";
 import { useTheme } from "../Theme/ThemeProvider";
 import Link from "next/link";
@@ -9,9 +9,7 @@ import Link from "next/link";
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen((prev) => !prev);
-
   return (
     <nav className="w-full h-20 bg-white dark:bg-gray-800 flex items-center justify-between text-black dark:text-white shadow-sm px-4">
       <div className="flex items-center justify-between w-full max-w-[60%] mx-auto">
@@ -37,7 +35,10 @@ export default function Navbar() {
               { name: "About", path: "/about" },
               { name: "Projects", path: "/projects" },
               { name: "Blog", path: "/blog" },
-              { name: "Contact", path: "#contact" },
+              {
+                name: "Contact",
+                path: { pathname: "/", query: { section: "contact" } },
+              },
             ].map((item) => (
               <li
                 key={item.name}

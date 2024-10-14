@@ -6,13 +6,15 @@ import SkillsetSection from "./components/skillsets/SkillsetSection";
 import TestimonialsComponent from "./components/Testimonials";
 
 export default function Home() {
+
   return (
-    <section className="w-full h-auto p-8 max-width-[80%] mx-auto flex flex-col">
+    <section className="w-full h-auto p-8  mx-auto flex flex-col">
       <HeroSection />
       <ProjectListing />
       <SkillsetSection />
       <BlogSection />
       <TestimonialsComponent />
+
       <div id="contact">
         <ContactSection />
       </div>

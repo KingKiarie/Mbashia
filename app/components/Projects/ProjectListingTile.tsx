@@ -13,7 +13,7 @@ const ProjectCard = ({
 }) => {
   return (
     <Link href={`/projects/${id}`} passHref>
-      <motion.a
+      <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         whileHover={{ scale: 1.05 }}
@@ -38,7 +38,7 @@ const ProjectCard = ({
             <strong>Framework:</strong> {framework}
           </p>
         </div>
-      </motion.a>
+      </motion.div>
     </Link>
   );
 };

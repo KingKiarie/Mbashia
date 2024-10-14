@@ -2,12 +2,10 @@
 
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-
 const ThemeContext = createContext({
   theme: "light",
   toggleTheme: () => {},
 });
-
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
@@ -22,7 +20,6 @@ export const ThemeProvider = ({ children }) => {
     }
   }, []);
 
-
   const toggleTheme = () => {
     setTheme((prevTheme) => {
       const newTheme = prevTheme === "light" ? "dark" : "light";
@@ -35,7 +32,6 @@ export const ThemeProvider = ({ children }) => {
     });
   };
 
- 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
@@ -43,7 +39,6 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// Custom hook to use the theme context
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {

@@ -145,3 +145,27 @@ export const testimonials = [
       "Victor helped me navigate the transition into my first job as a software engineer. His practical advice and mentorship were key to building my confidence in the workplace.",
   },
 ];
+//blog data
+export const blogs = [
+  {
+    imageRef: "#",
+    title: "Understanding React Hooks",
+    excerpt:
+      "React Hooks have revolutionized the way we write React components. Learn the basics and advanced techniques...",
+    link: "/blogs/react-hooks",// add medium blogs here
+  },
+  {
+    imageRef: "#",
+    title: "JavaScript ES6 Features",
+    excerpt:
+      "Explore the new features introduced in ES6, including arrow functions, destructuring, and more...",
+    link: "/blogs/javascript-es6",//add medium blogs here
+  },
+  {
+    imageRef: "#",
+    title: "CSS Grid Layout: A Complete Guide",
+    excerpt:
+      "CSS Grid Layout is a powerful layout system available in CSS. This guide will show you how to get started...",
+    link: "/blogs/css-grid-layout",//add medium blogs here
+  },
+];

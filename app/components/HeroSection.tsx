@@ -10,10 +10,21 @@ import {
   FaDribbble,
   FaInstagram,
   FaTwitter,
+  FaEnvelope,
 } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 
 export default function HeroSection() {
+  const handleMail = () => {
+    const email = "kiarie7mbugua@gmail.com";
+    const subject = "Enter your subject clause here";
+    const body = "I would like to inquire about your services on the projects";
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink
+  };
+
   return (
     <>
       <section className="w-full h-auto max-w-[90%] lg:max-w-[60%] mx-auto space-y-10 items-center justify-evenly my-10 lg:my-20">
@@ -90,12 +101,35 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
             className="w-full flex flex-row space-x-4 lg:space-x-6 justify-center lg:justify-start"
           >
-            <FaTwitter className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
-            <FaFacebookF className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
-            <FaLinkedinIn className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
-            <FaGithub className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
-            <FaDribbble className="text-lg md:text-xl lg:text-2xl hover:text-pink-500 transition" />
-            <FaInstagram className="text-lg md:text-xl lg:text-2xl hover:text-pink-500 transition" />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/victor-mbashia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
+            </a>
+            <a
+              href="https://github.com/mbashia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaDribbble className="text-lg md:text-xl lg:text-2xl hover:text-pink-500 transition" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-lg md:text-xl lg:text-2xl hover:text-pink-500 transition" />
+            </a>
+            <a onClick={handleMail}>
+              <FaEnvelope className="text-lg md:text-xl lg:text-2xl hover:text-gray-500 transition" />
+            </a>
           </motion.div>
         </div>
       </section>
