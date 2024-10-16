@@ -121,14 +121,14 @@ export default function HeroSection() {
             >
               <FaGithub className="text-lg md:text-xl lg:text-2xl hover:text-blue-500 transition" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            {/* <a href="#" target="_blank" rel="noopener noreferrer">
               <FaDribbble className="text-lg md:text-xl lg:text-2xl hover:text-pink-500 transition" />
-            </a>
+            </a> */}
             <a href="#" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-lg md:text-xl lg:text-2xl hover:text-pink-500 transition" />
             </a>
             <a onClick={handleMail}>
-              <FaEnvelope className="text-lg md:text-xl lg:text-2xl hover:text-gray-500 transition" />
+              <FaEnvelope className="text-lg md:text-xl lg:text-2xl hover:text-gray-500 transition cursor-pointer" />
             </a>
           </motion.div>
         </div>

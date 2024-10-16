@@ -3,7 +3,7 @@
 export const projectData = [
   {
     id: "1",
-    imageRef: "#",
+    imageRef: "/download.png",
     title: "Photography Branding Website",
     shortDescription:
       "A sleek, minimalist photography branding website with live photo previews and responsive layouts.",
@@ -18,7 +18,7 @@ export const projectData = [
   },
   {
     id: "2",
-    imageRef: "#",
+    imageRef: "/mbashia.jpeg",
     title: "E-Commerce Storefront",
     shortDescription:
       "An e-commerce platform with product search, filters, and secure checkout for a smooth shopping experience.",
@@ -152,20 +152,20 @@ export const blogs = [
     title: "Understanding React Hooks",
     excerpt:
       "React Hooks have revolutionized the way we write React components. Learn the basics and advanced techniques...",
-    link: "/blogs/react-hooks",// add medium blogs here
+    link: "/blogs/react-hooks", // add medium blogs here
   },
   {
     imageRef: "#",
     title: "JavaScript ES6 Features",
     excerpt:
       "Explore the new features introduced in ES6, including arrow functions, destructuring, and more...",
-    link: "/blogs/javascript-es6",//add medium blogs here
+    link: "/blogs/javascript-es6", //add medium blogs here
   },
   {
     imageRef: "#",
     title: "CSS Grid Layout: A Complete Guide",
     excerpt:
       "CSS Grid Layout is a powerful layout system available in CSS. This guide will show you how to get started...",
-    link: "/blogs/css-grid-layout",//add medium blogs here
+    link: "/blogs/css-grid-layout", //add medium blogs here
   },
 ];

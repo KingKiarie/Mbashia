@@ -28,7 +28,7 @@ const ProjectListing = () => {
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-8"
+          className="grid grid-cols- sm:grid-cols-2 gap-8 md:gap-8"
         >
           {projectData.slice(0, 4).map((project, index) => (
             <ProjectCard

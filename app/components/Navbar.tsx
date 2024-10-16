@@ -4,11 +4,11 @@
 import { useState } from "react";
 import { FaCloudSun, FaCloudMoon, FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
-import { useTheme } from "../Theme/ThemeProvider";
+// import { useTheme } from "../Theme/ThemeProvider";
 import Link from "next/link";
 
 export default function Navbar() {
-  const { theme, toggleTheme } = useTheme();
+  // const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   return (
@@ -50,7 +50,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <button
+          {/* <button
             onClick={toggleTheme}
             className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 transition-all ml-4"
           >
@@ -59,7 +59,7 @@ export default function Navbar() {
             ) : (
               <FaCloudSun className="text-yellow-400" size={20} />
             )}
-          </button>
+          </button> */}
         </div>
       </div>
 
