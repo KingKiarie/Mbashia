@@ -4,7 +4,7 @@ import { useState } from "react";
 import { testimonials } from "../shared/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { Navigation, Autoplay } from "swiper/modules"; // Import Autoplay
+import { Navigation, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
@@ -36,12 +36,12 @@ export default function TestimonialsComponent() {
       </motion.div>
 
       <Swiper
-        modules={[Navigation, Autoplay]} // Add Autoplay module
+        modules={[Navigation, Autoplay]} 
         navigation={false}
         loop={true}
         autoplay={{
-          delay: 3000, // Delay between auto scrolls (in milliseconds)
-          disableOnInteraction: false, // Allow auto-scroll even after interaction
+          delay: 3000, 
+          disableOnInteraction: false, 
         }}
         className="w-full"
         onSwiper={setSwiperInstance}

@@ -6,7 +6,7 @@ import { projectData } from "../shared/data";
 
 export default function Projects() {
   return (
-    <section className="w-full h-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto mt-20 px-4">
+    <section className="w-full h-auto max-w-[90%] md:max-w-[80%] lg:max-w-[60%] mx-auto mt-20 px-4">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -26,7 +26,7 @@ export default function Projects() {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
+        className="grid grid-cols-2 items-center gap-8"
       >
         {projectData.map((project) => (
           <ProjectCard
