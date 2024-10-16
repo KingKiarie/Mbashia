@@ -26,7 +26,7 @@ export default function Projects() {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid grid-cols-2 items-center gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-8"
       >
         {projectData.map((project) => (
           <ProjectCard

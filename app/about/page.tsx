@@ -28,7 +28,7 @@ export default function About() {
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="mb-12"
+              className="mb-12 py-4"
             >
               <h1 className="text-4xl font-bold mb-4">Welcome to My World!</h1>
               <p className="text-lg text-gray-600">
@@ -38,6 +38,13 @@ export default function About() {
                 me to explore a diverse range of technologies and platforms,
                 enhancing my skills along the way.
               </p>
+              <Link href={"#"} passHref legacyBehavior>
+                <a href="#" download="filename.pdf">
+                  <button className="underline underline-offset-4">
+                    Download Resume
+                  </button>
+                </a>
+              </Link>
             </motion.div>
 
             <motion.div

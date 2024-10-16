@@ -86,7 +86,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="flex justify-center py-4">
+          {/* <div className="flex justify-center py-4">
             <button
               onClick={toggleTheme}
               className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 transition-all"
@@ -97,7 +97,7 @@ export default function Navbar() {
                 <FaCloudSun className="text-yellow-400" size={20} />
               )}
             </button>
-          </div>
+          </div> */}
         </div>
       )}
     </nav>
