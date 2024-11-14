@@ -36,12 +36,12 @@ export default function TestimonialsComponent() {
       </motion.div>
 
       <Swiper
-        modules={[Navigation, Autoplay]} 
+        modules={[Navigation, Autoplay]}
         navigation={false}
         loop={true}
         autoplay={{
-          delay: 3000, 
-          disableOnInteraction: false, 
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         className="w-full"
         onSwiper={setSwiperInstance}

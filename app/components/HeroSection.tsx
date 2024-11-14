@@ -20,9 +20,9 @@ export default function HeroSection() {
     const subject = "Enter your subject clause here";
     const body = "I would like to inquire about your services on the projects";
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -39,23 +39,19 @@ export default function HeroSection() {
               I'M VICTOR MBASHIA
             </h1>
             <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px]">
-              Your friendly neighborhood frontend developer, UX architect, and
-              JavaScript engineer. I spend my days (and often nights) painting
-              the Internet canvas with projects and lines of code, turning
-              zeroes and ones into immersive, interactive experiences.
+              I specialize in creating scalable, impactful solutions using
+              Elixir, Phoenix LiveView, JavaScript, React, MySQL, PostgreSQL,
+              and Alpine.js. I excel at business analysis, which allows me to
+              understand complex business models and translate them into simple,
+              effective software solutions. As a tech writer, I enjoy sharing my
+              knowledge with the tech community and helping others learn. I'm
+              driven by using technology not just for the sake of innovation,
+              but to improve the quality of life and make a meaningful impact on
+              the lives of individuals. Always eager to grow and stay ahead of
+              the curve, I’m committed to excellence and love solving complex
+              problems every day.
             </p>
             <br />
-            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px]">
-              Bona fide photochromic Lens enthusiast—sunlight or indoors, I’ve
-              got it covered. I tread the path of minimalism, finding beauty in
-              simplicity and order. When I’m not crafting beautiful web
-              experiences, you can find me reading articles or swaying to the
-              rhythm of Pop Music & Jazz, losing myself in the captivating flow
-              of melodies. Anyways, you can{" "}
-              <Link href="#" className="font-bold hover:underline">
-                Contact Me
-              </Link>
-            </p>
           </motion.div>
 
           <motion.div

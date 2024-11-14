@@ -6,7 +6,6 @@ import SkillsetSection from "./components/skillsets/SkillsetSection";
 import TestimonialsComponent from "./components/Testimonials";
 
 export default function Home() {
-
   return (
     <section className="w-full h-auto p-8  mx-auto flex flex-col">
       <HeroSection />

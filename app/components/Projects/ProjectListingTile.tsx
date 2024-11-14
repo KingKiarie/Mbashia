@@ -3,13 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({
-  id,
-  imageRef,
-  title,
-  shortDescription,
-  framework,
-}) => {
+const ProjectCard = ({ id, imageRef, title, shortDescription, framework }) => {
   return (
     <Link href={`/projects/${id}`} passHref>
       <motion.div

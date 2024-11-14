@@ -44,7 +44,9 @@ html.dark .border {
 html.dark button {
   border: 1px solid none;
   background-color: transparent;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 html.dark button:hover {
@@ -53,7 +55,9 @@ html.dark button:hover {
 }
 
 body {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 html.dark ul {
@@ -61,6 +65,8 @@ html.dark ul {
   padding-left: 20px;
 
   body {
-    transition: background-color 0.6s ease, color 0.5s ease;
+    transition:
+      background-color 0.6s ease,
+      color 0.5s ease;
   }
 }

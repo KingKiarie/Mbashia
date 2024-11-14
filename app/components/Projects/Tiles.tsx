@@ -22,9 +22,9 @@ export default function TileSection({
       </div>
       <div>
         {logos.map((logo, index) => (
-          <div key={index} className="flex items-center"> 
-            <img src={logo} alt={logoDes[index]} className="h-10 w-auto" /> 
-            <span className="ml-2">{logoDes[index]}</span> 
+          <div key={index} className="flex items-center">
+            <img src={logo} alt={logoDes[index]} className="h-10 w-auto" />
+            <span className="ml-2">{logoDes[index]}</span>
           </div>
         ))}
       </div>
