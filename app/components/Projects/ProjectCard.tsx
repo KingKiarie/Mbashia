@@ -7,7 +7,7 @@ import { projectData } from '@/app/shared/data';
 
 const ProjectListing = () => {
   return (
-    <section className="w-full h-auto py-10 md:py-16">
+    <section className="w-full h-auto py-10 md:py-0  ">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

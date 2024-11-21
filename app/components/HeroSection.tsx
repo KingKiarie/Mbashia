@@ -27,7 +27,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <section className="w-full h-auto max-w-[90%] lg:max-w-[60%] mx-auto space-y-10 items-center justify-evenly my-10 lg:my-20">
+      <section className="w-full h-auto max-w-[90%] lg:max-w-[60%] mx-auto space-y-10 items-center justify-evenly my-10 lg:my-20 ">
         <div className="w-full h-auto flex flex-col space-y-6 lg:space-y-10">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
