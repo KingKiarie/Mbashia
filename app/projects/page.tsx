@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import ProjectCard from "../components/Projects/ProjectListingTile";
-import { projectData } from "../shared/data";
+import { motion } from 'framer-motion';
+import ProjectCard from '../components/Projects/ProjectListingTile';
+import { projectData } from '../shared/data';
 
 export default function Projects() {
   return (
@@ -10,7 +10,7 @@ export default function Projects() {
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
         className="mb-10 text-start"
       >
         <h1 className="text-3xl md:text-4xl font-black text-gray-800 dark:text-gray-200 mb-4">
@@ -25,7 +25,7 @@ export default function Projects() {
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-10"
       >
         {projectData.map((project) => (

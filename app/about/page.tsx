@@ -1,33 +1,33 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import SkillSetTiles from "../components/skillsets/SkillSets";
-import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
-import Link from "next/link";
+import { motion } from 'framer-motion';
+import SkillSetTiles from '../components/skillsets/SkillSets';
+import { useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
+import Link from 'next/link';
 
 export default function About() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const section = searchParams.get("section");
-    if (section === "skillset") {
-      const SkillsetSection = document.getElementById("skillset");
+    const section = searchParams.get('section');
+    if (section === 'skillset') {
+      const SkillsetSection = document.getElementById('skillset');
       if (SkillsetSection) {
-        SkillsetSection.scrollIntoView({ behavior: "smooth" });
+        SkillsetSection.scrollIntoView({ behavior: 'smooth' });
       }
     }
   }, [searchParams]);
 
   return (
-    <section className="w-full h-auto py-16">
+    <section className="w-full h-auto py-16 ">
       <div className="max-w-[90%] md:max-w-[70%] lg:max-w-[60%] mx-auto">
         <div className="w-full flex flex-col-reverse lg:flex-row ">
           <div className="w-full flex flex-col">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
               className="mb-12 py-4"
             >
               <h1 className="text-4xl font-bold mb-4">Welcome to My World!</h1>
@@ -38,7 +38,7 @@ export default function About() {
                 me to explore a diverse range of technologies and platforms,
                 enhancing my skills along the way.
               </p>
-              <Link href={"#"} passHref legacyBehavior>
+              <Link href={'#'} passHref legacyBehavior>
                 <a href="#" download="filename.pdf">
                   <button className="underline underline-offset-4">
                     Download Resume
@@ -50,7 +50,7 @@ export default function About() {
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+              transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
               className="mb-12"
             >
               <h2 className="text-3xl font-bold">My Core Values</h2>
@@ -64,7 +64,7 @@ export default function About() {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+            transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
             className="w-full mb-10 flex items-center justify-center"
           >
             <img
@@ -78,7 +78,7 @@ export default function About() {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+          transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.4 }}
           className="mb-12"
         >
           <h2 className="text-3xl font-bold">Projects</h2>
@@ -92,7 +92,7 @@ export default function About() {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
+          transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.6 }}
           className="mt-12"
         >
           <Link href="/projects">
@@ -107,7 +107,7 @@ export default function About() {
         id="skillset"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.8 }}
+        transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.8 }}
       >
         <SkillSetTiles />
       </motion.div>

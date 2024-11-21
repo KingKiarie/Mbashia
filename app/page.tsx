@@ -1,9 +1,9 @@
-import BlogSection from "./components/blog/BlogSection";
-import ContactSection from "./components/ContactSection";
-import HeroSection from "./components/HeroSection";
-import ProjectListing from "./components/Projects/ProjectCard";
-import SkillsetSection from "./components/skillsets/SkillsetSection";
-import TestimonialsComponent from "./components/Testimonials";
+import BlogSection from './components/blog/BlogSection';
+import ContactSection from './components/ContactSection';
+import HeroSection from './components/HeroSection';
+import ProjectListing from './components/Projects/ProjectCard';
+import SkillsetSection from './components/skillsets/SkillsetSection';
+import TestimonialsComponent from './components/Testimonials';
 
 export default function Home() {
   return (

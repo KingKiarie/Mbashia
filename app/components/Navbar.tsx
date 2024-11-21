@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+'use client';
 
-import { useState } from "react";
-import { FaCloudSun, FaCloudMoon, FaBars } from "react-icons/fa6";
-import { FaTimes } from "react-icons/fa";
+import { useState } from 'react';
+import { FaCloudSun, FaCloudMoon, FaBars } from 'react-icons/fa6';
+import { FaTimes } from 'react-icons/fa';
 // import { useTheme } from "../Theme/ThemeProvider";
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Navbar() {
   // const { theme, toggleTheme } = useTheme();
@@ -32,13 +32,13 @@ export default function Navbar() {
         <div className="hidden lg:flex flex-row items-center space-x-6">
           <ul className="flex flex-row space-x-6">
             {[
-              { name: "Home", path: "/" },
-              { name: "About", path: "/about" },
-              { name: "Projects", path: "/projects" },
-              { name: "Blog", path: "/blog" },
+              { name: 'Home', path: '/' },
+              { name: 'About', path: '/about' },
+              { name: 'Projects', path: '/projects' },
+              { name: 'Blog', path: '/blog' },
               {
-                name: "Contact",
-                path: { pathname: "/", query: { section: "contact" } },
+                name: 'Contact',
+                path: { pathname: '/', query: { section: 'contact' } },
               },
             ].map((item) => (
               <li
@@ -67,13 +67,13 @@ export default function Navbar() {
         <div className="lg:hidden w-full bg-white dark:bg-gray-800 absolute top-20 left-0 z-50 shadow-md">
           <ul className="flex flex-col items-start space-y-4 px-8 py-6">
             {[
-              { name: "Home", path: "/" },
-              { name: "About", path: "/about" },
-              { name: "Projects", path: "/projects" },
-              { name: "Blog", path: "/blog" },
+              { name: 'Home', path: '/' },
+              { name: 'About', path: '/about' },
+              { name: 'Projects', path: '/projects' },
+              { name: 'Blog', path: '/blog' },
               {
-                name: "Contact",
-                path: { pathname: "/", query: { section: "contact" } },
+                name: 'Contact',
+                path: { pathname: '/', query: { section: 'contact' } },
               },
             ].map((item) => (
               <li

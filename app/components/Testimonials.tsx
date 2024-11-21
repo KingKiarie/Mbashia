@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { testimonials } from "../shared/data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
-import { Navigation, Autoplay } from "swiper/modules";
-import { motion } from "framer-motion";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import { useState } from 'react';
+import { testimonials } from '../shared/data';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { Navigation, Autoplay } from 'swiper/modules';
+import { motion } from 'framer-motion';
+import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 
 export default function TestimonialsComponent() {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -28,7 +28,7 @@ export default function TestimonialsComponent() {
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
       >
         <h1 className="text-3xl md:text-4xl font-bold text-start">
           Testimonials
@@ -51,7 +51,7 @@ export default function TestimonialsComponent() {
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
               className="flex flex-col items-center"
             >
               <p className="italic text-start px-4 md:px-10">

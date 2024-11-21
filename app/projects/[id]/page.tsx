@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React, { useState, useRef, useEffect } from "react";
-import { useParams } from "next/navigation";
-import { projectData } from "@/app/shared/data";
-import { motion } from "framer-motion";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-import Link from "next/link";
+import React, { useState, useRef, useEffect } from 'react';
+import { useParams } from 'next/navigation';
+import { projectData } from '@/app/shared/data';
+import { motion } from 'framer-motion';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa6';
+import Link from 'next/link';
 
 export default function ProjectDetails() {
   const params = useParams();
@@ -35,13 +35,13 @@ export default function ProjectDetails() {
 
   useEffect(() => {
     if (showVideo) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [showVideo]);
 
@@ -54,14 +54,14 @@ export default function ProjectDetails() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-        className={`mb-8 ${showVideo ? "blur-md" : ""}`}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
+        className={`mb-8 ${showVideo ? 'blur-md' : ''}`}
       >
         <div className="w-full h-80 bg-gray-200 rounded-md mb-4 p-12">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
             className="mb-8"
           >
             <h1 className="text-4xl font-bold">{selectedProject.title}</h1>
@@ -69,7 +69,7 @@ export default function ProjectDetails() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
             className="w-1/4 flex flex-col  space-x-4 mb-8 space-y-6 items-start "
           >
             <a
@@ -118,13 +118,13 @@ export default function ProjectDetails() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
         className="mb-8 flex flex-col lg:flex-row w-full"
       >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
           className="w-[70%] py-4"
         >
           <h1 className="text-2xl font-semibold">Description</h1>
@@ -135,7 +135,7 @@ export default function ProjectDetails() {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
           whileHover={{
             x: [0, 5, -5, 5, -5, 0],
             y: [0, , -5, 5, 0],
@@ -145,7 +145,7 @@ export default function ProjectDetails() {
         >
           <h2 className="text-2xl font-semibold">Tech Stack</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 flex flex-col">
-            {selectedProject.techStack.join(", ")}
+            {selectedProject.techStack.join(', ')}
           </p>
         </motion.div>
       </motion.div>
@@ -153,7 +153,7 @@ export default function ProjectDetails() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
         className="mb-8"
       >
         <h2 className="text-2xl font-semibold">Roles Played</h2>
@@ -166,7 +166,7 @@ export default function ProjectDetails() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
         className="mb-8"
       >
         <Link href="/projects">

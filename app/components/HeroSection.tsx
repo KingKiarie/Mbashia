@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { motion } from "framer-motion";
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import {
   FaFacebookF,
   FaArrowRight,
@@ -11,16 +11,16 @@ import {
   FaInstagram,
   FaTwitter,
   FaEnvelope,
-} from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa6";
+} from 'react-icons/fa';
+import { FaArrowLeft } from 'react-icons/fa6';
 
 export default function HeroSection() {
   const handleMail = () => {
-    const email = "kiarie7mbugua@gmail.com";
-    const subject = "Enter your subject clause here";
-    const body = "I would like to inquire about your services on the projects";
+    const email = 'kiarie7mbugua@gmail.com';
+    const subject = 'Enter your subject clause here';
+    const body = 'I would like to inquire about your services on the projects';
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject,
+      subject
     )}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
   };
@@ -32,7 +32,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
             className="flex flex-col items-start space-y-4 lg:space-y-2"
           >
             <h1 className="text-[28px] md:text-[36px] lg:text-[48px] font-bold">
@@ -57,7 +57,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+            transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
             className="flex justify-start"
           >
             <Link href="/about">
@@ -69,8 +69,8 @@ export default function HeroSection() {
                   transition={{
                     duration: 0.6,
                     repeat: Infinity,
-                    repeatType: "loop",
-                    ease: "easeInOut",
+                    repeatType: 'loop',
+                    ease: 'easeInOut',
                   }}
                 >
                   <FaArrowRight className="font-light" />
@@ -81,7 +81,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+            transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
             className="flex justify-start"
           >
             <Link href="/about">
@@ -94,7 +94,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+            transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.4 }}
             className="w-full flex flex-row space-x-4 lg:space-x-6 justify-center lg:justify-start"
           >
             <a href="#" target="_blank" rel="noopener noreferrer">

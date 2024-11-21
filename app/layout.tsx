@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { ThemeProvider } from "./Theme/ThemeProvider";
+import type { Metadata } from 'next';
+import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import { ThemeProvider } from './Theme/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: "Mbashia Portfolio",
+  title: 'Mbashia Portfolio',
   description:
-    "|certified fullstack developer with a strong vision and mission",
+    '|certified fullstack developer with a strong vision and mission',
 };
 
 export default function RootLayout({
@@ -22,10 +22,10 @@ export default function RootLayout({
           className={`font-bebas antialiased min-h-screen bg-cover bg-fixed`}
           style={{
             // backgroundImage: `url("/background/bg.png")`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: "10",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: '10',
           }}
         >
           {/* <CustomCursor /> */}

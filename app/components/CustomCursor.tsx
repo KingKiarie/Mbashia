@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -33,21 +33,21 @@ export default function CustomCursor() {
     const handleMouseLeave = () => setIsVisible(false);
 
     // Add event listeners
-    document.addEventListener("mousemove", moveCursor);
-    document.addEventListener("mouseenter", handleMouseEnter);
-    document.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener('mousemove', moveCursor);
+    document.addEventListener('mouseenter', handleMouseEnter);
+    document.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
-      document.removeEventListener("mousemove", moveCursor);
-      document.removeEventListener("mouseenter", handleMouseEnter);
-      document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener('mousemove', moveCursor);
+      document.removeEventListener('mouseenter', handleMouseEnter);
+      document.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 
   return (
     <div
       className={`fixed top-0 left-0 pointer-events-none w-40 h-40 rounded-full border-2 border-black transition-opacity duration-150 ease-in-out transform ${
-        isVisible ? "opacity-100" : "opacity-0"
+        isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       style={{
         transform: `translate3d(${position.x - 40}px, ${position.y - 40}px, 0)`,

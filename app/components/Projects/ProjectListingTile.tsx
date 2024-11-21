@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { motion } from "framer-motion";
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ id, imageRef, title, shortDescription, framework }) => {
   return (
@@ -10,7 +10,7 @@ const ProjectCard = ({ id, imageRef, title, shortDescription, framework }) => {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
         className="h-[550px] w-[500px] border  bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-4 flex flex-col"
       >
         <div className=" h-[60%] mb-10 ">

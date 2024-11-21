@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import ProjectCard from "./ProjectListingTile";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { projectData } from "@/app/shared/data";
+'use client';
+import React from 'react';
+import ProjectCard from './ProjectListingTile';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { projectData } from '@/app/shared/data';
 
 const ProjectListing = () => {
   return (
@@ -11,8 +11,8 @@ const ProjectListing = () => {
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="w-full max-w-[90%] md:max-w-[70%] lg:max-w-[60%] mx-auto flex flex-col items-start justify-start"
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
+        className=" w-full max-w-[90%] md:max-w-[70%] lg:max-w-[60%] mx-auto flex flex-col items-start justify-start"
       >
         <div className="mb-10 md:mb-12">
           <h1 className="text-[28px] md:text-[36px] lg:text-[42px] font-bold mb-4 text-start">
@@ -27,7 +27,7 @@ const ProjectListing = () => {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
           className="grid grid-cols-1 sm:grid-cols-2  gap-4 md:gap-10  "
         >
           {projectData.slice(0, 4).map((project, index) => (
@@ -46,7 +46,7 @@ const ProjectListing = () => {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
           className="text-center mt-8 md:mt-12 w-full"
         >
           <Link href="/projects">

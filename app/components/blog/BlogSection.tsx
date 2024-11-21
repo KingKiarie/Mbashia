@@ -1,7 +1,7 @@
-"use client";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { blogs } from "@/app/shared/data";
+'use client';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { blogs } from '@/app/shared/data';
 
 const BlogCard = ({ imageRef, title, excerpt, link }) => {
   return (
@@ -9,7 +9,7 @@ const BlogCard = ({ imageRef, title, excerpt, link }) => {
       className=" rounded-lg shadow-md overflow-hidden transition-transform transform duration-300"
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
+      transition={{ duration: 0.6, ease: 'easeInOut' }}
     >
       <div className="w-full h-40 overflow-hidden">
         <img
@@ -38,13 +38,13 @@ export default function BlogSection() {
       className="w-full py-16 max-w-[90%] lg:max-w-[60%] mx-auto "
       initial={{ y: 50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
+      transition={{ duration: 0.8, ease: 'easeInOut' }}
     >
       <motion.div
         className="w-full text-start"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: 'easeInOut' }}
       >
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
@@ -74,7 +74,7 @@ export default function BlogSection() {
               className="px-8 py-4 text-lg font-semibold underline underline-offset-4 rounded-md text-black ease-in duration-300"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
+              transition={{ duration: 0.6, ease: 'easeInOut' }}
             >
               Read More
             </motion.button>
