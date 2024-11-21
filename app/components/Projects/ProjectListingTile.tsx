@@ -11,16 +11,16 @@ const ProjectCard = ({ id, imageRef, title, shortDescription, framework }) => {
         whileInView={{ y: 0, opacity: 1 }}
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4"
+        className="h-[550px] w-[500px] border  bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-4 flex flex-col"
       >
-        <div className=" h-[200px] mb-10">
+        <div className=" h-[60%] mb-10 ">
           <img
             src={imageRef}
             alt={title}
             className="w-full h-full object-cover object-center rounded-xl"
           />
         </div>
-        <div>
+        <div className="h">
           <h2 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200">
             {title}
           </h2>
